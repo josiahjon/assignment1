@@ -2,6 +2,8 @@ package cse360assignment02;
 /**
  * This class implements an adding machine
  * @author josia
+ * total is the int to be used to keep track of the total
+ * history will give us a wall of keeping track of all the additions and subtractions
  *Version 1.0
  */
 public class AddingMachine {
@@ -26,8 +28,9 @@ public class AddingMachine {
   }
   
   /**
-   * This adds a value to the summation
+   * This adds a value to the total
    * @param value the value to be added
+   * history gets updated that addition was used, and by how much
    */
   
   public void add (int value) {
@@ -36,8 +39,9 @@ public class AddingMachine {
   }
   
   /**
-   *  This subtracts a value from the summation
+   *  This subtracts a value from the total
    * @param value the value to be subtracted
+   * history is updated with the new subtraction
    */
 
   public void subtract (int value) {
