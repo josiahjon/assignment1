@@ -3,7 +3,7 @@ package cse360assignment02;
  * This class implements an adding machine
  * @author josia
  * total is the int to be used to keep track of the total
- * history will give us a wall of keeping track of all the additions and subtractions
+ * history will give us a way of keeping track of all the additions and subtractions
  *Version 1.0
  */
 public class AddingMachine {
