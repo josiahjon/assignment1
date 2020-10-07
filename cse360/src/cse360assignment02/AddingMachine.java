@@ -6,6 +6,7 @@ package cse360assignment02;
  */
 public class AddingMachine {
   private int total;
+  private String history = "0";
   
   /**
    * This begins the adding machine
@@ -21,7 +22,7 @@ public class AddingMachine {
    */
   
   public int getTotal () {
-    return 0;
+    return total;
   }
   
   /**
@@ -30,6 +31,8 @@ public class AddingMachine {
    */
   
   public void add (int value) {
+	  total = value + total;
+	  history = history + " + " + value;
   }
   
   /**
@@ -38,14 +41,16 @@ public class AddingMachine {
    */
 
   public void subtract (int value) {
+	  total = total - value;
+	  history = history + " - " + value;
   }
   
   /**
-   * Returns the string
+   * Returns the history as a string
    */
 
   public String toString () {
-    return "";
+    return history;
   }
   
   /**
